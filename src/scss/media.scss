@@ -15,13 +15,64 @@
 }
 
 @media (max-width: 991px) {
-    body {
+    .start-btn {
+        font-size: 18px;
+        padding: 0 50px;
+        height: 49px;
+    }
+    h1 {
+        font-size: 70px;
+        text-align: center;
+    }
+    .clear-fix {
+        display: block;
+    }
+    .chat {
         display: none;
+    }
+    .header {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .index-section {
+        margin-top: 20vh;
+        &__slider {
+            font-size: 20px;
+        }
+        &__text {
+            font-size: 70px;
+        }
     }
 }
 
 @media (max-width: 767px) {
+    h1 {
+        font-size: 60px;
+ 
+    }
+    .index-section {
+        &__text {
+            font-size: 70px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
+    h1 {
+        font-size: 45px;
+
+    }
+    .footer {
+        justify-content: center;
+        &__socials {
+            display: none;
+        }
+    }
+    .index-section {
+        &__text {
+            font-size: 70px;
+        }
+    }
 }

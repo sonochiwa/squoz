@@ -15,7 +15,8 @@
 
 <body>
     <div class="wrapper">
-        <hedaer class="header">
+        <div class="clear-fix"></div>
+<hedaer class="header">
     <div class="container">
         <div class="header__inner">
             <nav class="menu">
@@ -52,7 +53,25 @@
             </div>
         </div>
     </div>
+
 </hedaer>
+
+<div class="burger">
+    <button class="burger__btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="burger__nav">
+        <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../studio.html">Студия</a></li>
+            <li><a href="../opportunities.html">Возможности</a></li>
+            <li><a href="../portfolio.html">Портфолио</a></li>
+            <li><a href="../blog.html">Блог</a></li>
+        </ul>
+    </nav>
+</div>
         <main class="main">
             <section class="index-section">
                 <div class="container">
@@ -73,9 +92,7 @@
             </section>
         </main>
     </div>
-    <div class="chat">
-    <img src="images/chat.svg" alt="chat">
-</div>
+   
     <footer class="footer">
     <div class="footer__copyright">
         © SQUOZ DIGITAL 2021
@@ -98,6 +115,48 @@
         </a>
     </div>
 </footer>
+
+<div class="chat">
+    <div class="img-wrapper">
+        <img src="images/chat.svg" alt="chat">
+    </div>
+</div>
+
+<div class="chat-dialog">
+    <div class="chat-dialog__header">
+        Чат
+        <img class="chat-dialog__close" src="images/chat-close.svg" alt="close">
+    </div>
+    <div class="chat-dialog__messages">
+        <div class="chat-dialog__incoming">
+            <p class="chat-dialog__incoming-text">Входящие</p>
+            <p class="chat-dialog__incoming-time">14:88</p>
+        </div>
+        <div class="chat-dialog__incoming">
+            <p class="chat-dialog__incoming-text">С 8 марта!</p>
+            <p class="chat-dialog__incoming-time">14:88</p>
+        </div>
+        <div class="chat-dialog__outgoing">
+            <p class="chat-dialog__outgoing-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi impedit
+                maxime accusamus ipsum distinctio esse labore nemo mollitia consequatur, ipsa doloribus architecto vero
+                reiciendis fugit iusto accusantium dignissimos dolorum. Maxime hic corporis voluptatibus ratione culpa
+                similique, nemo dolorum eligendi laboriosam inventore itaque dignissimos ullam repudiandae earum,
+                corrupti tempora id animi aliquid! Doloremque tot</p>
+            <p class="chat-dialog__outgoing-time">14:88</p>
+        </div>
+    </div>
+    <div class="chat-dialog__bottom">
+        <div class="chat-dialog__bottom-file">
+            <img src="images/file.svg" alt="file">
+        </div>
+        <form action="#">
+            <input type="text" class="chat-dialog__bottom-input" placeholder="Написать сообщение...">
+            <button class="chat-dialog__bottom-btn">
+                <img src="images/send.svg" alt="send">
+            </button>
+        </form>
+    </div>
+</div>
     <script src="js/app.min.js "></script>
 
 </body>

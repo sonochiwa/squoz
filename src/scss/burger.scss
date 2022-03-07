@@ -1,0 +1,95 @@
+.burger {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.burger__btn {
+    position: fixed;
+    top: 15px;
+    left: 7px;
+    width: 40px;
+    height: 32px;
+    background: none;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    z-index: 10;
+    span {
+        position: absolute;
+        left: 50%;
+        width: 26px;
+        height: 2px;
+        background-color: #000;
+        &:nth-child(1) {
+            top: 6px;
+            transform: translateX(-50%) translateY(0);
+            transition: top 0.1s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s,
+                transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87);
+        }
+        &:nth-child(2) {
+            top: 14px;
+            opacity: 1;
+            transform: translateX(-50%);
+        }
+        &:last-child {
+            top: 22px;
+            transform: translateX(-50%) translateY(0);
+            transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s,
+                transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87);
+        }
+    }
+    &.open {
+        z-index: 999;
+        span {
+            &:nth-child(1) {
+                top: 50%;
+                transform: translateX(-50%) translateY(0) rotate(45deg);
+                transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87),
+                    transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                top: 50%;
+                transform: translateX(-50%) translateY(0) rotate(-45deg);
+                transition: bottom 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87),
+                    transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s;
+            }
+        }
+    }
+}
+
+.burger__nav {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    padding: 50px;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: all 0.2s ease-out;
+    z-index: 998;
+    ul {
+        list-style-type: none;
+        text-align: right;
+    }
+    li {
+        padding: 12px 0;
+        text-align: center;
+    }
+    a {
+        position: relative;
+        text-decoration: none;
+
+        font-size: 24px;
+        color: $gray-dark;
+    }
+    &.open {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transform: translateX(0);
+    }
+}

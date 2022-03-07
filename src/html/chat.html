@@ -1,3 +1,41 @@
 <div class="chat">
-    <img src="@img/chat.svg" alt="chat">
+    <div class="img-wrapper">
+        <img src="@img/chat.svg" alt="chat">
+    </div>
+</div>
+
+<div class="chat-dialog">
+    <div class="chat-dialog__header">
+        Чат
+        <img class="chat-dialog__close" src="@img/chat-close.svg" alt="close">
+    </div>
+    <div class="chat-dialog__messages">
+        <div class="chat-dialog__incoming">
+            <p class="chat-dialog__incoming-text">Входящие</p>
+            <p class="chat-dialog__incoming-time">14:88</p>
+        </div>
+        <div class="chat-dialog__incoming">
+            <p class="chat-dialog__incoming-text">С 8 марта!</p>
+            <p class="chat-dialog__incoming-time">14:88</p>
+        </div>
+        <div class="chat-dialog__outgoing">
+            <p class="chat-dialog__outgoing-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi impedit
+                maxime accusamus ipsum distinctio esse labore nemo mollitia consequatur, ipsa doloribus architecto vero
+                reiciendis fugit iusto accusantium dignissimos dolorum. Maxime hic corporis voluptatibus ratione culpa
+                similique, nemo dolorum eligendi laboriosam inventore itaque dignissimos ullam repudiandae earum,
+                corrupti tempora id animi aliquid! Doloremque tot</p>
+            <p class="chat-dialog__outgoing-time">14:88</p>
+        </div>
+    </div>
+    <div class="chat-dialog__bottom">
+        <div class="chat-dialog__bottom-file">
+            <img src="@img/file.svg" alt="file">
+        </div>
+        <form action="#">
+            <input type="text" class="chat-dialog__bottom-input" placeholder="Написать сообщение...">
+            <button class="chat-dialog__bottom-btn">
+                <img src="@img/send.svg" alt="send">
+            </button>
+        </form>
+    </div>
 </div>
