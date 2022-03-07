@@ -5210,7 +5210,7 @@ template {
   padding: 0 21px;
 }
 
-.rigth-btn {
+.right-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5694,15 +5694,32 @@ h1 {
     text-align: center;
   }
 
-  .clear-fix {
-    display: block;
-  }
-
   .chat {
     display: none;
   }
 
-  .header {
+  .header__inner {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .header__color-theme {
+    margin-right: 13px;
+  }
+
+  .left-btn {
+    height: 36px;
+  }
+
+  .right-btn {
+    height: 36px;
+  }
+
+  .header__inner {
+    height: 60px;
+  }
+
+  .menu {
     display: none;
   }
 

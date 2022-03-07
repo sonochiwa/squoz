@@ -24,13 +24,26 @@
         font-size: 70px;
         text-align: center;
     }
-    .clear-fix {
-        display: block;
-    }
     .chat {
         display: none;
     }
-    .header {
+    .header__inner {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header__color-theme {
+        margin-right: 13px;
+    }
+    .left-btn {
+        height: 36px;
+    }
+    .right-btn {
+        height: 36px;
+    }
+    .header__inner {
+        height: 60px;
+    }
+    .menu {
         display: none;
     }
     .burger {
@@ -50,7 +63,6 @@
 @media (max-width: 767px) {
     h1 {
         font-size: 60px;
- 
     }
     .index-section {
         &__text {
@@ -62,7 +74,6 @@
 @media (max-width: 575px) {
     h1 {
         font-size: 45px;
-
     }
     .footer {
         justify-content: center;
