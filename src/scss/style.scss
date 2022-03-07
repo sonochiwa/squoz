@@ -1,0 +1,136 @@
+@import "normalize";
+@import "bootstrap-grid";
+@import "vars";
+@import "fonts";
+@import "btns";
+@import "chat";
+
+@import "index";
+@import "studio";
+@import "opportunities";
+@import "portfolio";
+@import "blog";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #f9f9f9;
+    font-family: "Roboto", sans-serif;
+    color: $gray-dark;
+    // overflow: hidden;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main {
+    // display: flex;
+    height: 100%;
+}
+
+// header-start
+
+.header {
+    display: block;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        margin: auto 0;
+        align-items: center;
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+    }
+    &__color-theme {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        margin-right: 30px;
+        img {
+            height: 27px;
+        }
+    }
+    &__auth {
+        display: flex;
+    }
+}
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__list-item {
+        list-style: none;
+        & + .menu__list-item {
+            margin-left: 25px;
+        }
+        &::after {
+            content: "";
+        }
+    }
+
+    &__link {
+        font-size: 24px;
+        font-weight: 300;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+// header-end
+
+// footer-start
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // max-width: 1920px;
+    min-height: 47px;
+    padding: 0 25px;
+    background-color: $gray-dark;
+    width: 100%;
+    &__copyright {
+        color: $white;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    &__socials {
+        display: flex;
+    }
+    &__link {
+        display: block;
+        img {
+            display: flex;
+            align-items: center;
+            height: 27px;
+            width: 27px;
+        }
+
+        & + .footer__link {
+            margin-left: 18px;
+        }
+    }
+}
+
+// footer-end
+
+@import "media";

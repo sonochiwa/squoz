@@ -1,0 +1,27 @@
+@media (max-width: 1399px) {
+    .index-section {
+        &__text {
+            font-size: 133px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .index-section {
+        &__text {
+            font-size: 110px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+}
