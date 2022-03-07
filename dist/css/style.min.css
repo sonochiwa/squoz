@@ -5708,15 +5708,17 @@ h1 {
   }
 
   .left-btn {
-    height: 36px;
+    font-size: 16px;
+    height: 34px;
   }
 
   .right-btn {
-    height: 36px;
+    font-size: 16px;
+    height: 34px;
   }
 
   .header__inner {
-    height: 60px;
+    height: 63px;
   }
 
   .menu {
